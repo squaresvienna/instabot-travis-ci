@@ -14,7 +14,6 @@ import sys
 from instabot import Bot
 
 
-
 bot = Bot(
             proxy=None,
             max_likes_per_day=200,
@@ -43,9 +42,9 @@ bot.login(
     password=os.getenv("INSTAGRAM_PASSWORD"),
 )
 
-bot.like_hashtag(self, "outrun", "retrowave", "cyberpunk")
+bot.like_hashtag("outrun")
 
-bot.comment_hashtag(self, "outrun", "retrowave", "cyberpunk")
+bot.comment_hashtag("outrun")
 
 bot.comment("Love it")
 
