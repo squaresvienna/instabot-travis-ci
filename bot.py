@@ -11,8 +11,6 @@ import time
 import random
 import sys
 
-del os.environ["BROWSER"]
-
 from instabot import Bot
 
 
@@ -45,9 +43,9 @@ bot.login(
     password=os.getenv("INSTAGRAM_PASSWORD"),
 )
 
-bot.like_hashtag("outrun", "retrowave", "cyberpunk")
+bot.like_hashtag(self, "outrun", "retrowave", "cyberpunk")
 
-bot.comment_hashtag("outrun", "retrowave", "cyberpunk")
+bot.comment_hashtag(self, "outrun", "retrowave", "cyberpunk")
 
 bot.comment("Love it")
 
