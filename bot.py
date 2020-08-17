@@ -11,6 +11,8 @@ import time
 import random
 import sys
 
+del os.environ["BROWSER"]
+
 from instabot import Bot
 
 
