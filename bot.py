@@ -36,11 +36,7 @@ bot = Bot(
             unlike_delay=30,
             follow_delay=60,
             unfollow_delay=60,
-            comment_delay=120,
-            whitelist=False,
-            blacklist=False,
-            comments_file=False,
-            stop_words=['shop', 'store', 'free', 'nude']
+            comment_delay=120
 )
 bot.login(
     username=os.getenv("INSTAGRAM_USERNAME"), 
