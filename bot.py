@@ -47,12 +47,10 @@ bot.login(
     password=os.getenv("INSTAGRAM_PASSWORD"),
 )
 
-bot.like_hashtag(
-    "synthwave", "retrowave", "cyberpunk", "retrofuturism",  "1980", "1984", "newretrowave", "synth", "cyber, "80s", "retrofuture", "retroart", "outrun", "bladerunner", "newretronet", "vaporwave"
-)
+bot.like_hashtag('synthwave', 'retrowave', 'cyberpunk', 'retrofuturism',  '1980', '1984', 'newretrowave', 'synth', 'cyber', '80s', 'retrofuture', 'retroart', 'outrun', 'bladerunner', 'newretronet', 'vaporwave')
 
 bot.comment_hashtag(
-    "synthwave", "retrowave", "cyberpunk", "retrofuturism",  "1980", "1984", "newretrowave", "synth", "cyber, "80s", "retrofuture", "retroart", "outrun", "bladerunner", "newretronet", "vaporwave"
+    "synthwave", "retrowave", "cyberpunk", "retrofuturism",  "1980", "1984", "newretrowave", "synth", "cyber", "80s", "retrofuture", "retroart", "outrun", "bladerunner", "newretronet", "vaporwave"
 )
 
 bot.comment("Love it")
