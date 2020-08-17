@@ -23,7 +23,7 @@ bot = Bot(
             max_comments_per_day=50,
             max_likes_to_like=100,
             filter_users=True,
-            max_followers_to_follow=2000,
+            max_followers_to_follow=10000,
             min_followers_to_follow=10,
             max_following_to_follow=7500,
             min_following_to_follow=10,
@@ -31,11 +31,12 @@ bot = Bot(
             max_following_to_followers_ratio=2,
             max_following_to_block=2000,
             min_media_count_to_follow=3,
-            like_delay=30,
-            unlike_delay=30,
-            follow_delay=60,
-            unfollow_delay=60,
-            comment_delay=120
+            like_delay=20,
+            unlike_delay=20,
+            follow_delay=30,
+            unfollow_delay=30,
+            comment_delay=50,
+            comments_file="comments.txt",
 )
 bot.login(
     username=os.getenv("INSTAGRAM_USERNAME"), 
@@ -45,8 +46,6 @@ bot.login(
 bot.like_hashtag("outrun")
 
 bot.comment_hashtag("outrun")
-
-bot.comment("Love it")
 
 bot.follow("activefollower")
 
