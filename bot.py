@@ -41,9 +41,9 @@ bot.login(
     password=os.getenv("INSTAGRAM_PASSWORD"),
 )
 
-bot.like_hashtag("outrun")
+bot.like_hashtag("synthwave")
 
-bot.comment_hashtag("outrun")
+bot.comment_hashtag("synthwave")
 
 bot.follow("activefollower")
 
