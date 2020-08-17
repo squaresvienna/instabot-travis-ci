@@ -54,3 +54,9 @@ bot.like_hashtag(
 bot.comment_hashtag(
     "synthwave", "retrowave", "cyberpunk", "retrofuturism",  "1980", "1984", "newretrowave", "synth", "cyber, "80s", "retrofuture", "retroart", "outrun", "bladerunner", "newretronet", "vaporwave"
 )
+
+bot.follow(
+    "activefollower"
+)
+
+bot.unfollow_non_followers()
