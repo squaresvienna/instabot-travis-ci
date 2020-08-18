@@ -45,8 +45,12 @@ bot.login(
 
 bot.like_timeline()
 
-bot.like_hashtag("retrowave")
+hashtag = bot.get_hashtag_medias("retrowave")
+bot.like_medias(hashtag)
 
-bot.comment_hashtag("retrowave")
+bot.comment_medias(hashtag)
+
+users = bot.get_hashtag_users("retrowave")
+bot.follow_users(users)
 
 bot.follow("activefollower")
