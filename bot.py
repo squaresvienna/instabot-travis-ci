@@ -45,10 +45,8 @@ bot.login(
 
 bot.like_timeline()
 
-bot.like_hashtag("retroart")
+bot.like_hashtag("retrowave")
 
-bot.comment_hashtag("retroart")
+bot.comment_hashtag("retrowave")
 
 bot.follow("activefollower")
-
-bot.unfollow_non_followers()
