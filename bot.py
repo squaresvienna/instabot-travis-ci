@@ -17,24 +17,24 @@ from instabot import Bot
 bot = Bot(
             proxy=None,
             max_likes_per_day=200,
-            max_unlikes_per_day=50,
+            max_unlikes_per_day=0,
             max_follows_per_day=100,
             max_unfollows_per_day=20,
             max_comments_per_day=50,
-            max_likes_to_like=500,
+            max_likes_to_like=1000,
             filter_users=False,
             filter_verified_accounts=True,
             max_followers_to_follow=30000,
             min_followers_to_follow=10,
-            max_following_to_follow=7500,
+            max_following_to_follow=2000,
             min_following_to_follow=10,
             max_following_to_block=2000,
             min_media_count_to_follow=3,
-            like_delay=20,
-            unlike_delay=20,
+            like_delay=10,
+            unlike_delay=10,
             follow_delay=30,
             unfollow_delay=30,
-            comment_delay=50,
+            comment_delay=40,
             comments_file="comments.txt"
 )
 
@@ -43,9 +43,11 @@ bot.login(
     password=os.getenv("INSTAGRAM_PASSWORD"),
 )
 
-bot.like_hashtag("cyberpunk")
+bot.like_timeline()
 
-bot.comment_hashtag("cyberpunk")
+bot.like_hashtag("retroart")
+
+bot.comment_hashtag("retroart")
 
 bot.follow("activefollower")
 
