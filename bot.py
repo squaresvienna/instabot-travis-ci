@@ -37,7 +37,7 @@ bot = Bot(
             unfollow_delay=30,
             comment_delay=50,
             comments_file="comments.txt",
-            max_likes_to_like=./,
+            base_path=./,
 )
 bot.login(
     username=os.getenv("INSTAGRAM_USERNAME"), 
