@@ -36,9 +36,9 @@ bot = Bot(
             follow_delay=30,
             unfollow_delay=30,
             comment_delay=50,
-            comments_file="comments.txt",
-            base_path=./,
+            comments_file="comments.txt"
 )
+
 bot.login(
     username=os.getenv("INSTAGRAM_USERNAME"), 
     password=os.getenv("INSTAGRAM_PASSWORD"),
